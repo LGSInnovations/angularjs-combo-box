@@ -4,7 +4,7 @@
  * @description
  * Directive to create a combination of input text field and select/option dropdown.
  */
-angular.module("angularjs-combo-box").directive('comboBox', ['$document', '$window', function($document, $window) {
+angular.module("angularjs-combo-box", []).directive('comboBox', ['$document', '$window', function($document, $window) {
 	var userAgent = _.get($window, 'navigator.userAgent', '');
 	var isWebkit = /WebKit/.test(userAgent) && !/Edge/.test(userAgent);
 
